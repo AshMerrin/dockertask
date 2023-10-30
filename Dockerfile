@@ -1,7 +1,7 @@
 FROM node:18
-WORKDIR /root/devopstask/nodeapp
-COPY package*.json ./
+WORKDIR /root/devopstask
+COPY /root/devopstask/package*.json ./
 RUN npm install
-COPY app.js ./
+COPY /root/devopstask/app.js ./
 EXPOSE 3000
 CMD ["node", "app.js"]
