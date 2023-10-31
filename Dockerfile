@@ -1,5 +1,5 @@
 FROM node:18
-WORKDIR /home/DevTask3
+WORKDIR /home/DevTask3/devopstask
 COPY package*.json ./
 RUN npm install
 COPY app.js ./
